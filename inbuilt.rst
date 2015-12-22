@@ -299,6 +299,7 @@ Here are all the currently implemented items and their functions.
         :returns function:
 
     .. function:: list:goMax()
+
         Sets the position to maximum.
 
 
@@ -344,6 +345,7 @@ Here are all the currently implemented items and their functions.
         `OnMove(x,y)` [*]_
 
  .. [*] This might be used internally so be careful when assigning.
+
 
     **Important Variables**:
 
@@ -538,7 +540,7 @@ Trigger admin
 =============
 To get the trigger admin handle::
 
- local ta = Gamestate.current.triggerAdmin()
+ local ta = Gamestate.current().triggerAdmin()
 
 .. function:: ta:setEnviroment(global)
 
@@ -791,7 +793,7 @@ Texture manager
 
 
 .. note::
-    stuff marked with `pr` is used for once only loads.
+    functions that start with  `pr`  are used for once only loads.
 
 .. function:: tm:newSheet(name,image)
 
@@ -886,7 +888,7 @@ Texture mapper
 
 .. function:: tmap:new(shape,img.quad)
 
-    :params Shape shape: shape admin shape.
+    :params Shape shape: shapeAdmin shape.
 
     :params Love2DImage img:
 
@@ -940,7 +942,7 @@ Text
 
 The Text inherits the following functions:
 
-``getColision``, ``draw``, ``update``, ``OnMenu``,``OnMenu``, ``OnCopy``, ``setMod``,``save``,``remove``
+``getColision``, ``draw``, ``update``, ``OnMenu``, ``OnMenu``, ``OnCopy``, ``setMod``, ``save``, ``remove``
 
 **However it does not include ``load`` !**
 

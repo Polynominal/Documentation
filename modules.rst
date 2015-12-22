@@ -158,7 +158,7 @@ To make a water effect I decided to split our work in 3 sections.
     White = new tile
     Gray = the new position.
 
-At `liquid:new`::
+At `liquid:new` ::
 
  self = {
     ...
@@ -166,11 +166,11 @@ At `liquid:new`::
     canvas = love.graphics.newCanvas(32,32)
  }
 
-At `liquid:makeColision`::
+At `liquid:makeColision` ::
 
     canvas = love.graphics.newCanvas(w,h)
 
-At `liquid:update`::
+At `liquid:update` ::
 
   local game = Gamestate.current()
   local mainCanvas = game.mainCanvas
@@ -205,7 +205,7 @@ At `liquid:update`::
 
 2. **Flip the reflection and place it at our block.**
 
-At `liquid:draw`::
+At `liquid:draw` ::
 
  local x,y = self.colision:bbox() -- bbox gives our top cordinates
 
@@ -219,7 +219,7 @@ At `liquid:draw`::
 3. **Add a water effect from shader.**
 
 
- At `liquid:update`::
+ At `liquid:update` ::
 
   ...
   ...
@@ -271,7 +271,7 @@ At this point it is obvious that we need a few more functions::
 
 We will also need to make a small incision
 
-At `liquid:update`::
+At `liquid:update` ::
 
  ...
 
@@ -345,7 +345,7 @@ Dependencies
 ------------
 Some derivatives might need dependencies, for example the *Elevator*'s *helevator* derivative needs the *Door* module
 
-To do this you need to define a few functions in *Elevator/helevator/src.lua*::
+To do this you need to define a few functions in *Elevator/helevator/src.lua* ::
 
  local der = {}
  function der:new(...)

@@ -316,7 +316,7 @@ Using your card
 ---------------
 
  .. note::
-    The name of your on playersCards and saves will match that of your folder name.
+    The name of your card in playersCards and saves will match that of your folder name.
 
 
 To use your card you must at first load it in, however the easiest way to test it is to play skirmish.
